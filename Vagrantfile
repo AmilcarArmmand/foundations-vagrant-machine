@@ -3,7 +3,7 @@
 
 Vagrant.configure('2') do |config|
   config.vm.box = 'ubuntu/trusty64'
-  config.vm.hostname = 'foundation-VM'
+  config.vm.hostname = 'foundations-VM'
 
   if Vagrant.has_plugin?("vagrant-vbguest")
     config.vbguest.auto_update = false

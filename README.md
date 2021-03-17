@@ -3,7 +3,16 @@
 These Vagrant files automate the installation of an Apache2 server running on Ubuntu 14.04.
 
 What's in the box:
+* [git]
 * [Emacs](https://www.gnu.org/software/emacs/) - The best text editor
+* [vim]
+* [gdb]
+* [Betty linter]
+* [mysql]
+* [valgrind]
+* [shellcheck]
+* [curl]
+* [make]
 
 # Requirements
 
@@ -28,6 +37,9 @@ From this directory, let's start your Vagrant box by typing in your terminal (it
 ```sh
 vagrant up
 ```
+
+The VM is provisioned with a shell script and a Puppet manifest to automate the installaion and setup of the contents.
+
 
 Once the setup is complete, just run:
 
