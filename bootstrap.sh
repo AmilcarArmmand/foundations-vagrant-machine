@@ -32,14 +32,9 @@ echo 'deb http://repo.mysql.com/apt/ubuntu/ trusty mysql-5.7-dmr' | sudo tee -a 
 install 'mysql' mysql-server-5.7
 
 # emacs
-FILE_E='/home/vagrant/emacs'
-
-if [ ! -d "$FILE_E" ]; then
-    echo "Installing emacs"
-    git clone -b master git://git.sv.gnu.org/emacs.git /home/vagrant/emacs >/dev/null 2>&1
-else
-    echo "Emacs is installed"
-fi
+sudo add-apt-repository ppa:kelleyk/emacs
+sudo apt-get update
+install 'emacs' emacs25
 
 # Betty linter
 FILE='/home/vagrant/Betty'

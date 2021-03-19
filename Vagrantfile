@@ -24,7 +24,7 @@ Vagrant.configure('2') do |config|
   end
 
   config.vm.provision :shell, path: 'bootstrap.sh', keep_color: true
-  config.vm.provision "file", source: "~/dotfiles/.aliases", destination: "~/.bash_aliases"
+  config.vm.provision "file", source: ".aliases", destination: "~/.bash_aliases"
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "manifests"
     puppet.manifest_file = "default.pp"
