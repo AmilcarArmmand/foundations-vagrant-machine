@@ -7,8 +7,8 @@ exec { 'apt-get update':
 }
 
 $packages = ['vim', 'git', 'curl', 'valgrind', 'make', 'manpages-dev',
-	    'manpages-posix-dev', 'shellcheck', 'autoconf', 'build-essential',
-	    'texinfo']
+      'manpages-posix-dev', 'shellcheck', 'autoconf', 'build-essential',
+      'texinfo']
 
 package { $packages:
   ensure => 'installed'
